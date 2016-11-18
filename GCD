@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int main(void)
+{
+	int a, b;
+	printf("Dividend: ");
+	scanf("%d", &a);
+	printf("Divisor: ");
+	scanf("%d", &b);
+	int rem = 0;
+		while (b != 0)
+		{
+			rem = a % b;
+			a = b;
+			b = rem;
+		}
+		printf("%d", a);
+	return 0;
+}
